@@ -1,5 +1,9 @@
-// NJM4350D(ユニポーラステッピングモータドライバ)の制御用クラス
-//スレッドを利用した並列処理を実装(予定)
+/**
+ * @file NJM4350D.hpp
+ * @brief NJM4350Dを操作するクラスの定義
+ * @author Jun Nakanishi
+ * @date 2020/06/24
+ */
 
 #ifndef NJM4350D_H_
 #define NJM4350D_H_
@@ -7,6 +11,9 @@
 #include "mbed.h"
 
 
+/*! @class
+ @brief NJM4350Dを操作するクラスの実装
+*/
 class NJM4350D {
     public:
         NJM4350D(PinName pin_enable, PinName pin_mode, PinName pin_dir, PinName pin_step);

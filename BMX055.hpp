@@ -1,9 +1,19 @@
+/**
+ * @file BMX055.hpp
+ * @brief BMX055を操作するクラスの定義
+ * @author Jun Nakanishi
+ * @date 2020/06/24
+ */
+
 #ifndef BMX055_HPP_
 #define BMX055_HPP_
 
 #include "mbed.h"
 
 
+/*! @class
+ @brief BMX055を操作するクラスの実装
+*/
 class BMX055 {
     public:
         BMX055(PinName pin_SDA, PinName pin_SCL);
